@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#ffffff</color>
+    <color name="primary_dark">#eeeeee</color>
+    <color name="accent">#cc0000</color>
+    <color name="itemGridBg">#eeeeee</color>
+    <color name="titleText">#212121</color>
+    <color name="categoryListBG">#ffffff</color>
+
+
+</resources>
