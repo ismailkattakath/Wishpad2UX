@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.pkmmte.view.CircularImageView;
 
 public class CategoryAdapter extends ArrayAdapter<String>{
 
@@ -15,7 +14,7 @@ public class CategoryAdapter extends ArrayAdapter<String>{
     private final String[] catTitle;
     private final Integer[] catImage;
     public CategoryAdapter(Activity context, String[] name, Integer[] imageId) {
-        super(context, R.layout.category_item, name);
+        super(context, R.layout.single_category_card, name);
         this.context = context;
         this.catTitle = name;
         this.catImage = imageId;
@@ -24,7 +23,7 @@ public class CategoryAdapter extends ArrayAdapter<String>{
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View rowView= inflater.inflate(R.layout.category_item, null, true);
+        View rowView= inflater.inflate(R.layout.single_category_card, null, true);
         TextView txtTitle = (TextView) rowView.findViewById(R.id.categoryTitle);
 
         ImageView imageView = (ImageView) rowView.findViewById(R.id.categoryImage);

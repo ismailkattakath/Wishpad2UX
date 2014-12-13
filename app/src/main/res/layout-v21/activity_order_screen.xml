@@ -31,6 +31,20 @@
         android:layout_weight="3"
         android:background="@color/itemGridBg">
 
+        <GridView
+            android:id="@+id/itemGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:numColumns="@integer/itemGridCols"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:listSelector="?android:attr/selectableItemBackground">
+
+            </GridView>
+
     </LinearLayout>
 
 </LinearLayout>

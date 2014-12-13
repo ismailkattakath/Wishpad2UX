@@ -2,39 +2,64 @@ package com.etuper.wishpad.wishpad2ux;
 
 
 import android.app.Activity;
-import android.app.ActionBar;
-import android.app.Fragment;
-import android.content.Context;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ListView;
-import android.widget.Toast;
-import android.os.Build;
 
 public class OrderScreen extends Activity {
 
     ListView catList;
-    String[] catTitles = {
-            "American cuisine",
-            "Australian cuisine",
-            "Lists of beverages‎",
-            "Brazilian cuisine",
-            "Lists of breads",
-            "Lists of cheeses‎",
-            "Dessert",
-            "Indian cuisine",
-            "Italian cuisine",
-            "Japanese cuisine",
-            "Lists of Korean cuisine‎",
-            "United Kingdom cuisine",
-            "Vietnamese cuisine"
+    GridView itemGrid;
+
+    String[] titleList = {
+            "Penne in Wild Mushroom Sauce",
+            "Home Made Beef Lasagna ",
+            "Home Made Char Grilled Beef or Chicken Burger",
+            "Beer Battered Cod Fillet",
+            "شر غرلد كمبرلاند سوسق",
+            "Char Grilled Rump Steak",
+            "ചിക്കന്‍ ടിക്ക മസാല",
+            "Saag Aloo (Potato & Spinach)",
+            "Cod Fish Goujons and French Fries",
+            "Margherita Pizza with Salad",
+            "Spaghetti with Meat Balls ",
+            "Cheese Burger with French Fries ",
+            "Chicken Burger with French Fries"
     } ;
-    Integer[] catImages = {
+
+    String[] secondaryTitleList = {
+            "بينه إن ولد مشروم سوس",
+            "هم مدي بيف لسجن",
+            "هم مدي شر غرلد بيف ار شيكن برجر",
+            "بير بطرد كود فيلة",
+            "Char Grilled Cumberland Sausage",
+            "شر غرلد رومب ستيك",
+            "ചിക്കന്‍ ടിക്ക മസാല",
+            "صاج ألو (بتت & سبنش)",
+            "كود فيش ججنس اند فرنش فريس",
+            "مرغريتا بيتزا وذ سلاد",
+            "سباغتي وذ ميت بلس",
+            "شيس برجر وذ فرنش فريس",
+            "شيكن برجر وذ فرنش فريس"
+    } ;
+
+    String[] priceList = {
+            "£4.95",
+            "£7.25",
+            "£8.95",
+            "£1.95",
+            "£10.95",
+            "£12.95",
+            "£6.95",
+            "£12.95",
+            "£11.95",
+            "£14.95",
+            "£14.95",
+            "£10.95",
+            "£6.95"
+    } ;
+
+    Integer[] imageList = {
             R.drawable.item1,
             R.drawable.item2,
             R.drawable.item3,
@@ -55,11 +80,13 @@ public class OrderScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_screen);
 
-        CategoryAdapter adapter = new CategoryAdapter(OrderScreen.this, catTitles, catImages);
+        CategoryAdapter catAdapter = new CategoryAdapter(OrderScreen.this, titleList, imageList);
         catList=(ListView)findViewById(R.id.categoryList);
-        catList.setAdapter(adapter);
+        catList.setAdapter(catAdapter);
 
-
+        ItemAdapter itemAdapter = new ItemAdapter(OrderScreen.this, titleList, secondaryTitleList,priceList, imageList);
+        itemGrid=(GridView)findViewById(R.id.itemGridView);
+        itemGrid.setAdapter(itemAdapter);
 
     }
 
