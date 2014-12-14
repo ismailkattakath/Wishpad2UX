@@ -7,4 +7,13 @@
         <item name="android:colorAccent">@color/accent</item>
 
     </style>
+
+    <style name="light_text_shadow" parent="wishpad_material">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowColor">#AA000000</item>
+    </style>
+
 </resources>

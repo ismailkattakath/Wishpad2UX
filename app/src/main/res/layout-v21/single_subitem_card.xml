@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RadioButton
+            android:id="@+id/subitemSelector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/subitemTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/titleText"
+            android:textSize="20sp"
+            android:fontFamily="@string/roboto_regular"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"/>
+
+        <TextView
+            android:id="@+id/subitemPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center|end"
+            android:maxLines="1"
+            android:textColor="@color/titleText"
+            android:textSize="20sp"
+            android:fontFamily="@string/roboto_condensed"
+            android:text="$45.87"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>

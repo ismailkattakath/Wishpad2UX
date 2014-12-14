@@ -17,7 +17,7 @@
             android:id="@+id/categoryList"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:listSelector="?android:attr/selectableItemBackground"
+            android:listSelector="@drawable/category_selector_ripple"
             android:divider="@color/categoryListBG">
 
         </ListView>

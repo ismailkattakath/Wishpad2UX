@@ -7,6 +7,11 @@
     <color name="itemGridBg">#eeeeee</color>
     <color name="titleText">#212121</color>
     <color name="categoryListBG">#ffffff</color>
-
+    <color name="defaultTint">#11000000</color>
+    <color name="add2cartButtonBg">#4CAF50</color>
+    <color name="customRipple">#44000000</color>
+    <color name="plusButtonBg">#9E9E9E</color>
+    <color name="minusButtonBg">#BDBDBD</color>
+    <color name="categoryListSelectColor">#F44336</color>
 
 </resources>

@@ -9,7 +9,8 @@
         android:theme="@style/wishpad_material" >
         <activity
             android:name=".OrderScreen"
-            android:label="@string/restaurant_name" >
+            android:label="@string/restaurant_name"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +20,8 @@
         <activity
             android:name=".ItemScreen"
             android:label="@string/title_activity_item_screen"
-            android:theme="@android:style/Theme.Material.Light.DialogWhenLarge.NoActionBar">
+            android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

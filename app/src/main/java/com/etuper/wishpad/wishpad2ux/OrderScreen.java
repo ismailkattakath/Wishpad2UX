@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ListView;
 
@@ -47,12 +46,12 @@ public class OrderScreen extends Activity {
     } ;
 
     String[] priceList = {
-            "£4.95",
+            "£4.95 / £8.95",
             "£7.25",
-            "£8.95",
-            "£1.95",
+            "£8.95 / 97.10",
+            "£1.95 / £4.95 / £7.25 / £8.95",
             "£10.95",
-            "£12.95",
+            "£12.95 / £1.95 / £4.95",
             "£6.95",
             "£12.95",
             "£11.95",
