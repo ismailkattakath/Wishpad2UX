@@ -2,7 +2,10 @@ package com.etuper.wishpad.wishpad2ux;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ListView;
 
@@ -18,11 +21,11 @@ public class OrderScreen extends Activity {
             "Beer Battered Cod Fillet",
             "شر غرلد كمبرلاند سوسق",
             "Char Grilled Rump Steak",
-            "ചിക്കന്‍ ടിക്ക മസാല",
+            "Chicken Tikka Masala",
             "Saag Aloo (Potato & Spinach)",
             "Cod Fish Goujons and French Fries",
             "Margherita Pizza with Salad",
-            "Spaghetti with Meat Balls ",
+            "സ്പാഘെറ്റി വിത്ത്‌ മീറ്റ്‌ ബോള്‍സ്",
             "Cheese Burger with French Fries ",
             "Chicken Burger with French Fries"
     } ;
@@ -88,6 +91,11 @@ public class OrderScreen extends Activity {
         itemGrid=(GridView)findViewById(R.id.itemGridView);
         itemGrid.setAdapter(itemAdapter);
 
+    }
+
+    public void onClick(View v) {
+        Intent intent=new Intent(this,ItemScreen.class);
+        startActivity(intent);
     }
 
 }

@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ItemScreen"
+            android:label="@string/title_activity_item_screen"
+            android:theme="@android:style/Theme.Material.Light.DialogWhenLarge.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

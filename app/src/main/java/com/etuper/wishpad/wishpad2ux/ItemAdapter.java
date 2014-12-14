@@ -39,4 +39,6 @@ public class ItemAdapter extends ArrayAdapter<String>{
         imageView.setImageResource(itemImage[position]);
         return rowView;
     }
+
+
 }
